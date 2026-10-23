@@ -1,0 +1,25 @@
+body { margin: 0; background: #070B14; color: #E2E8F0; font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif; }
+.container { max-width: 1200px; margin: 0 auto; padding: 30px 20px; }
+.hero-header { border-bottom: 2px solid #00E5FF; padding-bottom: 20px; margin-bottom: 30px; }
+.badge { display: inline-block; background: #00E5FF; color: #070B14; font-weight: bold; font-size: 11px; padding: 4px 10px; border-radius: 4px; margin-bottom: 10px; }
+h1 { margin: 0 0 10px 0; color: #FFF; font-size: 32px; }
+.subtitle { margin: 0; color: #94A3B8; font-size: 15px; }
+.grid-layout { display: grid; grid-template-columns: 1fr 1.6fr; gap: 24px; }
+.panel { background: #0F172A; border: 1px solid #1E293B; border-radius: 8px; padding: 20px; }
+h2 { margin-top: 0; font-size: 18px; color: #38BDF8; border-bottom: 1px solid #1E293B; padding-bottom: 10px; }
+label { display: block; margin: 15px 0 6px 0; font-size: 13px; color: #94A3B8; }
+input[type="text"] { width: 95%; background: #070B14; border: 1px solid #334155; color: #FFF; padding: 10px; border-radius: 4px; font-size: 14px; }
+input[type="range"] { width: 100%; margin: 10px 0; }
+.cat-group { margin: 15px 0; display: flex; gap: 15px; font-size: 13px; color: #CBD5E1; }
+button { width: 100%; background: #00E5FF; color: #070B14; border: none; padding: 12px; font-weight: bold; border-radius: 4px; cursor: pointer; margin-top: 15px; font-size: 14px; transition: 0.2s; }
+button:hover { background: #38BDF8; box-shadow: 0 0 15px rgba(0, 229, 255, 0.4); }
+.metrics-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 20px; }
+.card { background: #070B14; border: 1px solid #1E293B; padding: 12px; border-radius: 6px; text-align: center; }
+.lbl { display: block; font-size: 11px; color: #64748B; margin-bottom: 4px; }
+.val { font-size: 18px; font-weight: bold; color: #38BDF8; font-family: monospace; }
+.val.success { color: #10B981; }
+.results-stream { display: flex; flex-direction: column; gap: 12px; max-height: 420px; overflow-y: auto; }
+.res-card { background: #070B14; border-left: 3px solid #00E5FF; padding: 12px 16px; border-radius: 0 6px 6px 0; }
+.res-hdr { display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; }
+.score { background: #1E1B4B; color: #A855F7; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: bold; font-family: monospace; }
+p { margin: 0; font-size: 13px; color: #94A3B8; }

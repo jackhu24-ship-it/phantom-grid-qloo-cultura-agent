@@ -1,0 +1,16 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments & Keys
+.env
+.env.local
+*.key
+*.pem
+
+# Intermediate render frames
+temp_render_frames/
+build/
+dist/
+.pytest_cache/

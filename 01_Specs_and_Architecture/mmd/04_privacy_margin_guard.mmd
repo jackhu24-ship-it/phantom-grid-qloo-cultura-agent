@@ -1,0 +1,25 @@
+graph LR
+    subgraph Operational_Envelope ["OPERATIONAL ENVELOPE (NOMINAL)"]
+        N1["Query Latency < 120 ms"]
+        N2["Affinity Confidence >= 0.75"]
+        N3["Zero Personally Identifiable Info (PII)"]
+    end
+
+    subgraph Caution_Zone ["CAUTION BOUNDARY (DAMPING)"]
+        C1["Latency 120ms - 350ms"]
+        C2["Affinity Confidence 0.60 - 0.74"]
+        C3["Qloo API Rate Limit at 80% Capacity"]
+    end
+
+    subgraph Hard_Trip_Boundary ["HARD TRIP BOUNDARY (SAFETY SHIELD)"]
+        H1["Qloo 429 Rate Limit -> CIRCUIT TRIP"]
+        H2["PII Leak Attempt -> INSTANT REJECT"]
+        H3["Zero Memory Residue -> MANDATORY ZDR SCRUB"]
+    end
+
+    Operational_Envelope --> Caution_Zone
+    Caution_Zone --> Hard_Trip_Boundary
+
+    style Operational_Envelope fill:#064e3b,stroke:#10b981,stroke-width:2px,color:#fff
+    style Caution_Zone fill:#78350f,stroke:#f59e0b,stroke-width:2px,color:#fff
+    style Hard_Trip_Boundary fill:#450a0a,stroke:#ef4444,stroke-width:2px,color:#fff

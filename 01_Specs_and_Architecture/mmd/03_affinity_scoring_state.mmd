@@ -1,0 +1,11 @@
+stateDiagram-v2
+    [*] --> STANDBY : System Armed
+    STANDBY --> QUERY_INGRESS : User Cultural Input
+    QUERY_INGRESS --> ENTITY_EXTRACTION : Parse Media / Taste Entities
+    ENTITY_EXTRACTION --> QLOO_API_CORRELATION : Fetch Affinity Vectors
+    QLOO_API_CORRELATION --> DAMPED_AFFINITY_FIT : Filter Low Correlation (< 0.65)
+    DAMPED_AFFINITY_FIT --> CIRCUIT_BREAKER_TRIP : Rate Limit or Timeout
+    CIRCUIT_BREAKER_TRIP --> FALLBACK_SAFE_OUTPUT : Graceful Degraded Response
+    DAMPED_AFFINITY_FIT --> MCP_DISPATCH_COMPLETE : High Confidence (> 0.85)
+    MCP_DISPATCH_COMPLETE --> STANDBY : Clean Session Purge (0.00MB)
+    FALLBACK_SAFE_OUTPUT --> STANDBY : Clean Session Purge (0.00MB)

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PHANToM GRID // CultuRa Autonomous Agent</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="hero-header">
+      <div class="badge">PHANToM GRID 2.0 // FAST-MCP CULTURAL ENGINE</div>
+      <h1>CultuRa Agentic Taste Nexus</h1>
+      <p class="subtitle">Privacy-Preserving Cross-Domain Taste Inference | ASIL-D Zero-PII Compliant</p>
+    </header>
+    <main class="grid-layout">
+      <section class="panel control-panel">
+        <h2>Mission Ingress Matrix</h2>
+        <label for="intent">Seed Cultural Query:</label>
+        <input type="text" id="intent" value="Neo-Tokyo Cyberpunk Cinema and Italian Espresso">
+        <label for="damping">Damping Threshold (<span id="damp-val">0.70</span>):</label>
+        <input type="range" id="damping" min="0.5" max="0.95" step="0.05" value="0.70">
+        <div class="cat-group">
+          <label><input type="checkbox" value="movies" checked> Movies</label>
+          <label><input type="checkbox" value="dining" checked> Dining</label>
+          <label><input type="checkbox" value="fashion" checked> Fashion</label>
+        </div>
+        <button id="run-btn">EXECUTE TASTE INFERENCE</button>
+      </section>
+      <section class="panel telemetry-panel">
+        <h2>Active Telemetry & Governance</h2>
+        <div class="metrics-row">
+          <div class="card"><span class="lbl">LATENCY</span><span class="val" id="m-lat">48.2 ms</span></div>
+          <div class="card"><span class="lbl">MEMORY (ZDR)</span><span class="val success">0.000000 MB</span></div>
+          <div class="card"><span class="lbl">QPS SAFETY</span><span class="val">NOMINAL</span></div>
+        </div>
+        <div class="results-stream" id="results"></div>
+      </section>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

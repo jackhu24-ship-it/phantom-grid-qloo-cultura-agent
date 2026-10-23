@@ -1,0 +1,23 @@
+graph TD
+    subgraph Ingress_Layer ["PHASE 1: INGRESS & MCP PROTOCOL"]
+        U1["User Cultural Query"] --> GW["FastMCP Cultural Gateway"]
+        U2["Live Demo Web App"] --> GW
+        U3["Cross-Domain Preferences"] --> GW
+    end
+
+    subgraph Intelligence_Kernel ["PHASE 2 & 3: QLOO REASONING & TASTE NEXUS"]
+        GW --> QD["Qloo API Entity Extractor (/search)"]
+        QD --> QA["Cultural Affinity Matrix (/v2/insights)"]
+        QA --> AG["CultuRa Autonomous AgentCore"]
+    end
+
+    subgraph Governance_Outgress ["PHASE 4: SAFETY & PRIVACY GOVERNANCE"]
+        AG --> RL["Rate Limit Guard & API Token Bucket"]
+        AG --> PM["Zero PII Privacy Guard (ZDR)"]
+        AG --> OUT["Structured MCP Cultural Nexus Output"]
+    end
+
+    style GW fill:#0f172a,stroke:#00e5ff,stroke-width:2px,color:#fff
+    style AG fill:#1e1b4b,stroke:#a855f7,stroke-width:2px,color:#fff
+    style RL fill:#450a0a,stroke:#ef4444,stroke-width:2px,color:#fff
+    style OUT fill:#064e3b,stroke:#10b981,stroke-width:2px,color:#fff

@@ -1,0 +1,17 @@
+sequenceDiagram
+    autonumber
+    actor User as Client / Live Web UI
+    participant MCP as FastMCP Gateway
+    participant Kernel as CultuRa AgentCore
+    participant Qloo as Qloo Cultural API
+    participant Guard as Privacy & Rate Guard
+
+    User->>MCP: 1. Cultural Query ("Neo-Tokyo Cyberpunk x Italian Dining")
+    MCP->>Guard: 2. Validate Privacy Margins & Rate Limit (< 100 QPS)
+    Guard-->>MCP: Envelope Verified OK
+    MCP->>Kernel: 3. Dispatch Sanitized Intent Vector
+    Kernel->>Qloo: 4. Query /search and /v2/insights (Taste Correlation)
+    Qloo-->>Kernel: 5. Return High-Dimensional Cultural Affinity Embeddings
+    Kernel->>Kernel: 6. Synthesize Cross-Domain Taste Nexus Plan
+    Kernel-->>MCP: 7. Formatted MCP Response Payload
+    MCP-->>User: 8. Real-Time Dynamic Cultural Recommendations
