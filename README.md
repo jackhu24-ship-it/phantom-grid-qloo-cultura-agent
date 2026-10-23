@@ -61,3 +61,18 @@ The frontend is fully compatible with GitHub Pages:
 - Go to your repository **Settings > Pages**.
 - Set Source to **Deploy from a branch** (\main\ / root or \/03_Live_Demo_Web\).
 - Access the live app via the generated GitHub Pages URL.
+
+## 🚀 Live Demo & Local Execution Guide
+
+### 1. Local Quick-Start (本地快速啟動)
+To run the interactive web interface locally:
+\\\ash
+python -m http.server 8080
+\\\
+Open your browser and navigate to \http://127.0.0.1:8080/03_Live_Demo_Web/\ to experience the 0-cold-start interactive cultural manifold visualizer.
+
+### 2. GitHub Pages Deployment (線上展示)
+The frontend is fully compatible with GitHub Pages:
+- Go to your repository **Settings > Pages**.
+- Set Source to **Deploy from a branch** (\main\ / root or \/03_Live_Demo_Web\).
+- Access the live app via the generated GitHub Pages URL.
