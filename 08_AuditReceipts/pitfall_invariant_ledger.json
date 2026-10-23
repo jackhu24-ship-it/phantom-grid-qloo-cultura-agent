@@ -1,0 +1,26 @@
+{
+  "invariants": [
+    {
+      "id": "PITFALL-35",
+      "name": "GitHub Camo Proxy Image Cache Deadlock",
+      "status": "LOCKED"
+    },
+    {
+      "id": "PITFALL-36",
+      "name": "PowerShell Unclosed Quote Multiline Prompt Lock",
+      "status": "LOCKED"
+    },
+    {
+      "id": "PITFALL-37",
+      "name": "Windows ANSI CP950 Markdown Encoding Mutilation",
+      "status": "LOCKED"
+    },
+    {
+      "id": "PITFALL-38",
+      "name": "Card Boundary Collision & Visual Hierarchy Inversion",
+      "status": "LOCKED"
+    }
+  ],
+  "timestamp": 1792725715,
+  "version": "5.1.0"
+}
