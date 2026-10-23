@@ -45,3 +45,19 @@ CultuRa strictly decouples protocol orchestration from high-dimensional statisti
 git clone https://github.com/jackhu24-ship-it/phantom-grid-qloo-cultura-agent.git
 cd phantom-grid-qloo-cultura-agent
 cp .env.example .env
+## 🚀 Live Demo & Local Execution Guide
+
+### 1. Local Quick-Start (本地快速啟動)
+To run the interactive web interface locally:
+\\\ash
+git clone https://github.com/jackhu24-ship-it/phantom-grid-qloo-cultura-agent.git
+cd phantom-grid-qloo-cultura-agent/03_Live_Demo_Web
+python -m http.server 8080
+\\\
+Open your browser and navigate to \http://127.0.0.1:8080\ to experience the 0-cold-start interactive cultural manifold visualizer.
+
+### 2. GitHub Pages Deployment (線上展示)
+The frontend is fully compatible with GitHub Pages:
+- Go to your repository **Settings > Pages**.
+- Set Source to **Deploy from a branch** (\main\ / root or \/03_Live_Demo_Web\).
+- Access the live app via the generated GitHub Pages URL.
