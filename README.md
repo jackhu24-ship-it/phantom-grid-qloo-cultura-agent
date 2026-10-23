@@ -26,6 +26,10 @@ Traditional recommendation systems harvest intrusive Personally Identifiable Inf
 
 ## 2. System Architecture & Dual-Track Topology
 
+<p align="center">
+  <img src="01_Specs_and_Architecture/qloo_architecture_diagram_v40.png" alt="PHANToM GRID 2.0 Qloo CultuRa Agent Architecture v40" width="100%">
+</p>
+
 CultuRa strictly decouples protocol orchestration from high-dimensional statistical inference:
 
 | Subsystem Component | Operational Scope | Safety & Performance Standard |
