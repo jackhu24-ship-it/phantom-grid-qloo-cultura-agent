@@ -14,3 +14,8 @@ temp_render_frames/
 build/
 dist/
 .pytest_cache/
+
+# Video & PDF ignore
+*.mp4
+*.pdf
+*.mov
