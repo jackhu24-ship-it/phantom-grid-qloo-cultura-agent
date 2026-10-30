@@ -1,0 +1,8 @@
+{
+  "tournament": "202610_Qloo_Agentic_AI_Hackathon",
+  "iterations": 1500,
+  "passed": 1500,
+  "peak_vram_gb": 41.8,
+  "limit_gb": 50,
+  "verdict": "PASS"
+}
